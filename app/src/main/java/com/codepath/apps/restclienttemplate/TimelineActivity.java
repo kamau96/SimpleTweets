@@ -1,18 +1,17 @@
 package com.codepath.apps.restclienttemplate;
 
-<<<<<<< HEAD
-=======
+
 import androidx.annotation.Nullable;
->>>>>>> ce63a78... Twitter part 2
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-<<<<<<< HEAD
+
 import android.os.Bundle;
 import android.util.Log;
-=======
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcel;
@@ -20,17 +19,16 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
->>>>>>> ce63a78... Twitter part 2
+
 
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
 
 import org.json.JSONArray;
 import org.json.JSONException;
-<<<<<<< HEAD
-=======
+
 import org.parceler.Parcels;
->>>>>>> ce63a78... Twitter part 2
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,11 +37,8 @@ import okhttp3.Headers;
 
 public class TimelineActivity extends AppCompatActivity {
     public static final String TAG = "TimelineActivity";
-<<<<<<< HEAD
-=======
     private final int REQUEST_CODE = 20;
 
->>>>>>> ce63a78... Twitter part 2
     TwitterClient client;
     RecyclerView rvTweets;
     List<Tweet> tweets;
@@ -107,9 +102,6 @@ public class TimelineActivity extends AppCompatActivity {
             }
         }, tweets.get(tweets.size() - 1).id);
     }
-
-<<<<<<< HEAD
-=======
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -138,7 +130,7 @@ public class TimelineActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
     }
 
->>>>>>> ce63a78... Twitter part 2
+
     private void populateHomeTimeline() {
         client.getHomeTimeline(new JsonHttpResponseHandler() {
             @Override
